@@ -24,9 +24,11 @@ public class NetworkSpeed {
 	});
 			    long startTime = System.currentTimeMillis();
 		         driver.get("https://www.amazon.in/");
-		        // driver.manage().window().maximize();
+		         driver.manage().window().maximize();
 		         long endTime = System.currentTimeMillis();
-		          System.out.println(endTime-startTime);  
+		          System.out.println(endTime-startTime); 
+		          driver.close();
+		          
 		          //91302
 		        
 	}
