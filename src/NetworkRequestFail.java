@@ -31,6 +31,9 @@ public class NetworkRequestFail {
 		   driver.get("https://rahulshettyacademy.com/angularAppdemo/");
 			driver.manage().window().maximize();
 			driver.findElement(By.cssSelector("button[routerlink*='/library']")).click();
+			System.out.println(driver.getTitle());
+			driver.close();
+			
 	}
 
 }
